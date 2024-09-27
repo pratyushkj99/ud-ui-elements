@@ -1,0 +1,145 @@
+@import "rsuite/dist/rsuite.css";
+
+#root {
+  padding: 0;
+  height: 100vh;
+  display: flex;
+  align-items: flex-start;
+}
+
+.rs-sidenav {
+  /* background-color: #afb0b2;  */
+  border-radius: 20px;
+  margin-left: 10px;
+  margin-top: 10px;
+}
+
+.rs-sidenav-body {
+  padding: 10px;
+  border-radius: 10px;
+  color: rgb(28, 28, 28);
+}
+
+.rs-nav-item,
+.rs-nav-menu {
+  font-size: 14px;
+  font-weight: 600;
+  padding-left: 20px;
+  color: #5a5a5a;
+  display: flex;
+  align-items: center;
+}
+
+.rs-icon {
+  font-size: 18px;
+  margin-right: 10px;
+  margin-top: 4px;
+}
+
+.rs-dropdown-selected-within .rs-dropdown-toggle{
+    background-color: rgb(202, 208, 209) !important;
+    border-radius: 10px !important;
+}
+.rs-dropdown-selected-within{
+    background-color: rgb(202, 208, 209) !important;
+    border-radius: 10px !important;
+}
+
+.rs-sidenav-item-active, .rs-dropdown-item-active{
+    color: rgb(38, 64, 194) !important;
+    font-size: medium;
+    font-weight: bold !important;
+    background-color: rgb(217, 213, 213) !important;
+    border-radius: 10px !important;
+    margin: 0px 2% !important;
+    width: 96% !important;
+}
+
+.rs-sidenav-item{
+    display: flex;
+}
+.rs-sidenav .rs-nav-item-active,
+.rs-sidenav .rs-nav-menu-active {
+  background-color: #ffffff !important; 
+  color: #003399 !important;
+  border-radius: 8px;
+}
+
+.rs-nav-sub {
+  padding-left: 30px;
+  border-radius: 8px;
+  background-color: #f7faff;
+}
+
+.rs-nav-sub .rs-nav-item-active {
+  background-color: #dceeff;
+  color: #003399 !important;
+  border-radius: 8px;
+  padding: 10px 15px;
+}
+
+.rs-nav-item:hover,
+.rs-nav-menu:hover {
+  background-color: #f2f7ff;
+  border-radius: 8px;
+}
+
+.rs-nav-sub .rs-nav-item:hover {
+  background-color: #e0f0ff;
+  border-radius: 8px;
+}
+
+.soon-badge {
+  font-size: 12px;
+  background-color: #e0f0ff;
+  color: #3b80f8;
+  padding: 2px 6px;
+  border-radius: 10px;
+  margin-left: auto;
+}
+/* General Sidenav styling remains unchanged */
+.rs-sidenav {
+    border-radius: 20px;
+    margin-left: 10px;
+    margin-top: 10px;
+  }
+  
+  .rs-sidenav-body {
+    padding: 10px;
+    border-radius: 10px;
+    color: rgb(28, 28, 28);
+  }
+  
+  /* Upgrade button and logo section styling */
+  .upgrade-section {
+    border-top: 1px solid #ddd;
+    padding: 15px;
+    text-align: center;
+  }
+  
+  .upgrade-button {
+    background-color: #003399;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-weight: bold;
+  }
+  
+  .upgrade-button:hover {
+    background-color: #0055cc;
+  }
+  
+  .logo-section {
+    border-top: 1px solid #ddd;
+    padding: 15px;
+    text-align: center;
+  }
+  
+  .turbify-logo {
+    width: 80px; /* Adjust the logo size */
+  }
+  
+  /* Maintain rest of the styles */
+  

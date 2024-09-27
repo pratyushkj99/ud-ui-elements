@@ -1,0 +1,20 @@
+[
+    {
+      "title": "Legal",
+      "image": "https://via.placeholder.com/100",
+      "description": "Start by choosing your business structure, registering your business name, and obtaining necessary licenses.",
+      "buttonText": "Start Now"
+    },
+    {
+      "title": "Domain",
+      "image": "https://via.placeholder.com/100",
+      "description": "Secure your online presence by choosing and registering a domain name for your business. Claim your free domain now!",
+      "buttonText": "Claim Now"
+    },
+    {
+      "title": "Website",
+      "image": "https://via.placeholder.com/100",
+      "description": "Create a professional website for your business in just a few clicks.",
+      "buttonText": "Create Now"
+    }
+  ]
