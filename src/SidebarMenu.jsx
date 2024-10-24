@@ -14,7 +14,7 @@ const iconMap = {
   DashboardIcon: <DashboardIcon />,
   GroupIcon: <GroupIcon />,
   MagicIcon: <MagicIcon />,
-  MoneyIcon: <MoneyIcon />,
+  MoneyIcon: <MoneyIcon/>,
   CogIcon: <CogIcon />
 };
 
