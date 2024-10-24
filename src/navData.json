@@ -1,0 +1,98 @@
+{
+    "sidenav": [
+      {
+        "eventKey": "1",
+        "title": "Dashboard",
+        "icon": "DashboardIcon",
+        "type": "item",
+        "isSubItems": false
+      },
+      {
+        "eventKey": "2",
+        "title": "Online Presence",
+        "icon": "GroupIcon",
+        "type": "menu",
+        "isSubItems": true,
+        "subItems": [
+          { "eventKey": "2-1", "title": "Domains", "isSubItems": false },
+          { "eventKey": "2-2", "title": "Website", "isSubItems": false },
+          { "eventKey": "2-3", "title": "Business mail", "isSubItems": false },
+          { "eventKey": "2-4", "title": "SSL", "isSubItems": false }
+        ]
+      },
+      {
+        "eventKey": "3",
+        "title": "Local Works",
+        "icon": "MagicIcon",
+        "type": "menu",
+        "isSubItems": true,
+        "subItems": [
+          {
+            "eventKey": "3-1",
+            "title": "Listing",
+            "isSubItems": true,
+            "subItems": [
+              { "eventKey": "3-1-1", "title": "Listings", "isSubItems": false },
+              { "eventKey": "3-1-2", "title": "Publishers", "isSubItems": false },
+              {
+                "eventKey": "3-1-3",
+                "title": "Duplicate Suppression",
+                "isSubItems": false
+              }
+            ]
+          },
+          { "eventKey": "3-2", "title": "Review", "isSubItems": false },
+          { "eventKey": "3-3", "title": "Social", "isSubItems": false },
+          { "eventKey": "3-4", "title": "Workflows", "isSubItems": false },
+          { "eventKey": "3-5", "title": "Analytics", "isSubItems": false }
+        ]
+      },
+      {
+        "eventKey": "4",
+        "title": "Business Info",
+        "icon": "CogIcon",
+        "type": "menu",
+        "isSubItems": true,
+        "subItems": [
+          { "eventKey": "4-1", "title": "Legal", "isSubItems": false },
+          {
+            "eventKey": "4-2",
+            "title": "View Business Info",
+            "isSubItems": false
+          }
+        ]
+      },
+      {
+        "eventKey": "5",
+        "title": "Marketing",
+        "icon": "CogIcon",
+        "type": "item",
+        "isSubItems": false,
+        "soon": true
+      },
+      {
+        "eventKey": "6",
+        "title": "Finance",
+        "icon": "MoneyIcon",
+        "type": "item",
+        "isSubItems": false,
+        "soon": true
+      },
+      {
+        "eventKey": "7",
+        "title": "Productivity",
+        "icon": "DashboardIcon",
+        "type": "item",
+        "isSubItems": false,
+        "soon": true
+      },
+      {
+        "eventKey": "8",
+        "title": "Add ons",
+        "icon": "DashboardIcon",
+        "type": "item",
+        "isSubItems": false
+      }
+    ]
+  }
+  

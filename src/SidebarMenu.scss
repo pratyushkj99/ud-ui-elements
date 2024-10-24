@@ -1,0 +1,151 @@
+@import "rsuite/dist/rsuite.css";
+
+#root {
+  padding: 0;
+  height: 100vh;
+  display: flex;
+  align-items: flex-start;
+}
+
+.rs-sidenav {
+  /* background-color: #afb0b2;  */
+  border-radius: 20px;
+  margin-left: 10px;
+  margin-top: 10px;
+}
+
+.rs-sidenav-body {
+  padding: 10px;
+  border-radius: 10px;
+  color: rgb(28, 28, 28);
+}
+
+.rs-nav-item,
+.rs-nav-menu {
+  font-size: 14px;
+  font-weight: 600;
+  padding-left: 20px;
+  color: #5a5a5a;
+  display: flex;
+  align-items: center;
+}
+
+.rs-icon {
+  font-size: 18px;
+  margin-right: 10px;
+  margin-top: 4px;
+}
+.rs-sidenav-item-icon{
+  color:#0039A7 !important ;
+}
+
+.rs-dropdown-selected-within .rs-dropdown-toggle{
+    background-color: #F2F5FB !important;
+    border-radius: 12px !important;
+}
+.rs-dropdown-selected-within{
+    background-color: #F2F5FB !important;
+    border-radius: 12px !important;
+}
+
+.rs-sidenav-item-active, .rs-dropdown-item-active{
+    color: #0039A7 !important;
+    font-size: 16px !important;
+    font-weight: 700 !important;
+    background-color: #F2F5FB !important;
+    border-radius: 12px !important;
+    margin: 0px 2% !important;
+    width: 96% !important;
+    font-family: Arial !important;
+    font-style: normal !important;
+    // line-height: normal !important;
+}
+
+.rs-sidenav-item{
+    display: flex;
+}
+.rs-sidenav .rs-nav-item-active,
+.rs-sidenav .rs-nav-menu-active {
+  background-color: #ffffff !important; 
+  color: #0039A7 !important;
+  border-radius: 8px;
+}
+
+.rs-nav-sub {
+  padding-left: 30px;
+  border-radius: 8px;
+  background-color: #f7faff;
+}
+
+.rs-nav-sub .rs-nav-item-active {
+  background-color: #dceeff;
+  color: #0039A7 !important;
+  border-radius: 8px;
+  padding: 10px 15px;
+}
+
+.rs-nav-item:hover,
+.rs-nav-menu:hover {
+  background-color: #f2f7ff;
+  border-radius: 8px;
+}
+
+.rs-nav-sub .rs-nav-item:hover {
+  background-color: #e0f0ff;
+  border-radius: 8px;
+}
+
+.soon-badge {
+  font-size: 12px;
+  background-color: #e0f0ff;
+  color: #3b80f8;
+  padding: 2px 6px;
+  border-radius: 10px;
+  margin-left: auto;
+}
+/* General Sidenav styling remains unchanged */
+.rs-sidenav {
+    border-radius: 20px;
+    margin-left: 10px;
+    margin-top: 10px;
+  }
+  
+  .rs-sidenav-body {
+    padding: 10px;
+    border-radius: 10px;
+    color: rgb(28, 28, 28);
+  }
+  
+  /* Upgrade button and logo section styling */
+  .upgrade-section {
+    border-top: 1px solid #ddd;
+    padding: 15px;
+    text-align: center;
+  }
+  
+  .upgrade-button {
+    background-color: #0039A7;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 12px;
+    cursor: pointer;
+    font-weight: bold;
+  }
+  
+  .upgrade-button:hover {
+    background-color: #0055cc;
+  }
+  
+  .logo-section {
+    border-top: 1px solid #ddd;
+    padding: 15px;
+    text-align: center;
+  }
+  
+  .turbify-logo {
+    width: 80px; /* Adjust the logo size */
+  }
+  
+  /* Maintain rest of the styles */
+  
