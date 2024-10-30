@@ -14,7 +14,7 @@ const iconMap = {
   DashboardIcon: <DashboardIcon />,
   GroupIcon: <GroupIcon />,
   MagicIcon: <MagicIcon />,
-  MoneyIcon: <MoneyIcon/>,
+  MoneyIcon: <MoneyIcon />,
   CogIcon: <CogIcon />
 };
 
@@ -24,51 +24,55 @@ const App = () => {
   const [openMenu, setOpenMenu] = useState(null);
 
   const handleToggleMenu = (item) => {
-    console.log(item,"ITEM");
-    setOpenMenu(openMenu == item ? null : item);
-    console.log(openMenu,"OPEN MENU");
+    console.log(item, "ITEM");
+    if(item)
+    setOpenMenu(item.charAt(0));
+    console.log(openMenu, "OPEN MENU");
   }
+
   const renderNavItem = (item) => {
-    // console.log(item,"item check");
-    if (item.isSubItems && item.subItems) {
-      const isActiveMenu =
-        item.eventKey === activeKey ||
-        item.subItems.some((subItem) => subItem.eventKey === subItems);
-      console.log(activeKey,"#####ACTIVEMENU#######");
-      return (
-        <Nav.Menu
-          key={item.eventKey}
-          eventKey={item.eventKey}
-          title={item.title}
-          icon={iconMap[item.icon]}
-          active={isActiveMenu}
-          open={openMenu==item.eventKey}
-          onToggle={()=>handleToggleMenu(item.eventKey)}
-        >
-          {item.subItems.map((subItem) => renderNavItem(subItem))}
-        </Nav.Menu>
-      );
-    }
+    const isActiveMenu = item.eventKey === activeKey;
+    // const isActiveMenu = item.eventKey === activeKey || item.subItems.some((subItem) => subItem.eventKey === subItems);
+    // console.log(activeKey, "#####ACTIVEMENU#######");
 
     return (
-      <Nav.Item
-        key={item.eventKey}
-        eventKey={item.eventKey}
-        icon={iconMap[item.icon]}
-        active={item.eventKey === activeKey || item.eventKey === subItems}
-        onSelect={() => {
-          if (item.isSubItem) {
-            setSubItems(item.eventKey);
-            setActiveKey(item.parentKey);
-          } else {
-            setActiveKey(item.eventKey);
-            setSubItems(null);
-          }
-        }}
-      >
-        {item.title}
-        {item.soon && <span className="soon-badge">SOON</span>}
-      </Nav.Item>
+      <React.Fragment>
+        {item?.isSubItems && item?.subItems ?
+          <Nav.Menu
+            key={item.eventKey}
+            eventKey={item.eventKey}
+            title={item.title}
+            icon={iconMap[item.icon]}
+            active={isActiveMenu}
+            open={openMenu == item.eventKey}
+            onToggle={() => handleToggleMenu(item.eventKey)}
+          >
+            {item?.subItems?.map((subItem) => renderNavItem(subItem))}
+          </Nav.Menu>
+          :
+          <Nav.Item
+            key={item.eventKey}
+            eventKey={item.eventKey}
+            icon={iconMap[item.icon]}
+            active={item.eventKey === activeKey || item.eventKey === subItems}
+            onSelect={() => {
+              console.log("tekk", item);
+              if (item.isSubItems) {
+                setSubItems(item.eventKey);
+                setActiveKey(item.parentKey);
+              } else {
+                console.log("item.eventKEy", item.eventKey);
+                handleToggleMenu(item.eventKey)
+                setActiveKey(item.eventKey);
+                setSubItems(null);
+              }
+            }}
+          >
+            {item.title}
+            {item.soon && <span className="soon-badge">SOON</span>}
+          </Nav.Item>
+        }
+      </React.Fragment>
     );
   };
 
